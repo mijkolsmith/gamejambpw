@@ -19,7 +19,7 @@ public class DeathTrig : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         if (!playerDead && col.CompareTag("Player"))
             PlayerDeath();
